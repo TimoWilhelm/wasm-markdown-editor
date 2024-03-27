@@ -1,0 +1,15 @@
+[package]
+name = "markdown"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ['cdylib']
+
+[dependencies]
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["console"] }
+console_error_panic_hook = "0.1"
+
+pulldown-cmark = { version = "0.10", default-features = false, features = ["html"]}

@@ -1,0 +1,21 @@
+{
+  "name": "wasm-sample",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run wasm-pack && npm run bundle && npm run serve",
+    "wasm-pack": "wasm-pack build ./markdown --target web --release --out-dir ./pkg --scope wasm_sample",
+    "bundle": "tsup --config tsup.config.ts",
+    "serve": "npx http-server ."
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@wasm_sample/markdown": "file:./markdown/pkg"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3",
+    "wasm-pack": "^0.12.1"
+  }
+}
