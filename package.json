@@ -10,7 +10,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@wasm_sample/markdown": "file:./markdown/pkg"
+    "@wasm_sample/markdown": "file:./markdown/pkg",
+    "marked": "^12.0.1"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
