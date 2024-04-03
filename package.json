@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run wasm-pack && npm run bundle && npm run serve",
-    "wasm-pack": "wasm-pack build ./markdown --target web --release --out-dir ./pkg --scope wasm_sample",
+    "wasm-pack": "wasm-pack build markdown --target web --out-dir pkg --scope wasm_sample --release --reference-types",
     "bundle": "tsup --config tsup.config.ts",
     "serve": "npx http-server ."
   },
