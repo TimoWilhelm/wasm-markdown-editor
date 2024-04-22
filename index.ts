@@ -1,5 +1,5 @@
 import init, { render } from '@wasm_sample/markdown';
-import module from '@wasm_sample/markdown/markdown_bg.wasm';
+import module from '@wasm_sample/markdown/markdown_bg.wasm?url';
 import { marked } from 'marked';
 
 const url = new URL(module, import.meta.url);
