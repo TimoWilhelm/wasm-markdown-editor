@@ -10,9 +10,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need to have Node.js, npm, and Rust (+ Cargo) installed on your machine.
 
-Add the wasm32-unknown-unknown target to your Rust installation:
+Add the wasm32-unknown-unknown target to your Rust nightly installation:
 
 ```bash
+rustup toolchain install nightly
+rustup default nightly
 rustup target add wasm32-unknown-unknown
 ```
 if you are using a Non-Rustup installation, you can need to follow the instructions [here](https://rustwasm.github.io/wasm-pack/book/prerequisites/non-rustup-setups.html#manually-add-wasm32-unknown-unknown)
